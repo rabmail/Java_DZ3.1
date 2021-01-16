@@ -4,8 +4,10 @@ public class Main {
 
         long ticket = 199_99;
         long limit = 20;
-        long bonus = ticket / limit /100;
-
+        //отбрасываем дробную часть
+        long round = ticket / limit/100;
+        // добавляем копейки 00
+        long  bonus = round * 100;
                System.out.println(bonus);
     }
 }
